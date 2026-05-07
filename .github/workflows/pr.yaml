@@ -2,7 +2,10 @@
 name: pull_req 
 on:
     workflow_dispatch:
-        
+    push:
+     branches:
+      - main
+
 permissions:
   checks: write        # ← needed to create check runs
   contents: read       # ← needed to read the repo
